@@ -71,8 +71,7 @@ jobs:
         dotnet build -p:Version=${{ steps.date.outputs.date }} ".\CTe.Utils\CTe.Utils.csproj" -c "Release"
         dotnet build -p:Version=${{ steps.date.outputs.date }} ".\CTe.Wsdl\CTe.Wsdl.csproj" -c "Release"
         
-    #- name: Test
-    #  run: dotnet test --no-build --verbosity normal
+
 
     - name: Pack
       run: | 
